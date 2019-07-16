@@ -14,6 +14,7 @@
 		EC5343C522DD70D20085A939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5343C322DD70D20085A939 /* LaunchScreen.storyboard */; };
 		EC5343D022DD70D20085A939 /* LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343CF22DD70D20085A939 /* LightTests.swift */; };
 		EC5343DB22DD70D20085A939 /* LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343DA22DD70D20085A939 /* LightUITests.swift */; };
+		EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343EA22DD969F0085A939 /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		EC5343D622DD70D20085A939 /* LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5343DA22DD70D20085A939 /* LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightUITests.swift; sourceTree = "<group>"; };
 		EC5343DC22DD70D20085A939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				EC5343C122DD70D20085A939 /* Assets.xcassets */,
 				EC5343C322DD70D20085A939 /* LaunchScreen.storyboard */,
 				EC5343C622DD70D20085A939 /* Info.plist */,
+				EC5343EA22DD969F0085A939 /* SignInViewController.swift */,
 			);
 			path = Light;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */,
 				EC5343BD22DD70D00085A939 /* ViewController.swift in Sources */,
 				EC5343BB22DD70D00085A939 /* AppDelegate.swift in Sources */,
 			);
