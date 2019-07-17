@@ -15,6 +15,8 @@
 		EC5343D022DD70D20085A939 /* LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343CF22DD70D20085A939 /* LightTests.swift */; };
 		EC5343DB22DD70D20085A939 /* LightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343DA22DD70D20085A939 /* LightUITests.swift */; };
 		EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343EA22DD969F0085A939 /* SignInViewController.swift */; };
+		ECBB362C22DEBC5500D66769 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */; };
+		ECBB362E22DEC2DB00D66769 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		EC5343DA22DD70D20085A939 /* LightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightUITests.swift; sourceTree = "<group>"; };
 		EC5343DC22DD70D20085A939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
+		ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				EC5343C322DD70D20085A939 /* LaunchScreen.storyboard */,
 				EC5343C622DD70D20085A939 /* Info.plist */,
 				EC5343EA22DD969F0085A939 /* SignInViewController.swift */,
+				ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */,
+				ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */,
 			);
 			path = Light;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBB362C22DEBC5500D66769 /* RegisterUserViewController.swift in Sources */,
 				EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */,
 				EC5343BD22DD70D00085A939 /* ViewController.swift in Sources */,
+				ECBB362E22DEC2DB00D66769 /* HomePageViewController.swift in Sources */,
 				EC5343BB22DD70D00085A939 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

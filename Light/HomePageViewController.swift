@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  HomePageViewController.swift
 //  Light
 //
 //  Created by Kemar Galloway on 7/16/19.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var userFullNameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +20,13 @@ class SignInViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
+    @IBAction func signoutButtonTapped(_ sender: Any) {
+        print("sign out")
+    }
+    @IBAction func loadMemberProfileButtonTapped(_ sender: Any) {
+        print("load Member Profile Button Tapped")
+    }
     /*
     // MARK: - Navigation
 
@@ -32,15 +36,5 @@ class SignInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func signUpButtonTapped(_ sender: Any) {
-        print("sign up")
-        
-        let registerViewController = self.storyboard?.instantiateViewController(withIdentifier:
-            "RegisterUserViewController") as! RegisterUserViewController
-        
-        self.present(registerViewController, animated: true)
-    }
-    @IBAction func signInButtonTapped(_ sender: Any) {
-        print("sign in")
-    }
+
 }

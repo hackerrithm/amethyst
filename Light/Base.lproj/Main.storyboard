@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register User View Controller-->
         <scene sceneID="rgj-BF-l2b">
             <objects>
-                <viewController id="ff5-EI-Ixg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterUserViewController" id="ff5-EI-Ixg" customClass="RegisterUserViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="egO-Ea-g40">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,12 +64,18 @@
                                     <constraint firstAttribute="width" constant="172" id="Iue-Mq-SN3"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="ff5-EI-Ixg" eventType="touchUpInside" id="rCb-48-pHy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuQ-yI-whd">
                                 <rect key="frame" x="222" y="403" width="172" height="30"/>
                                 <color key="backgroundColor" red="0.0065372998709448422" green="0.65992145883147202" blue="0.32437746697295616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="signupButtonTapped:" destination="ff5-EI-Ixg" eventType="touchUpInside" id="gad-W1-0gl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,15 +104,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WTI-Fr-PKg"/>
                     </view>
+                    <connections>
+                        <outlet property="confirmPasswordTextField" destination="eJs-9A-TU5" id="oxC-PF-9OM"/>
+                        <outlet property="emailTextField" destination="gO8-Rt-G1U" id="kJJ-mI-YAg"/>
+                        <outlet property="firstNameTextField" destination="AvP-HF-U7R" id="noG-yn-BUP"/>
+                        <outlet property="lastNameTextField" destination="n7S-kq-Jun" id="G8L-y5-DVJ"/>
+                        <outlet property="passwordTextField" destination="YEX-0Q-v5c" id="YlJ-rG-OfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1g-uy-Gqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828.98550724637687" y="138.61607142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="AKK-kE-sL3">
             <objects>
-                <viewController id="ro0-zj-6h4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePageViewController" id="ro0-zj-6h4" customClass="HomePageViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="88G-Sn-4Ge">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,13 +128,20 @@
                                 <rect key="frame" x="0.0" y="68" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Home" id="z5m-uG-GfA">
-                                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="Z8T-11-M0g"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Sign out" id="Z8T-11-M0g">
+                                            <connections>
+                                                <action selector="signoutButtonTapped:" destination="ro0-zj-6h4" id="NXf-L7-dn9"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQn-DD-noG">
                                 <rect key="frame" x="132" y="183" width="150" height="30"/>
                                 <state key="normal" title="Load profile"/>
+                                <connections>
+                                    <action selector="loadMemberProfileButtonTapped:" destination="ro0-zj-6h4" eventType="touchUpInside" id="aTb-My-8Pg"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knb-hx-W32">
                                 <rect key="frame" x="20" y="220" width="374" height="21"/>
@@ -144,6 +164,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7lr-49-NJJ"/>
                     </view>
+                    <connections>
+                        <outlet property="userFullNameLabel" destination="knb-hx-W32" id="evX-iQ-Ldl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6k-c6-Ktu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
