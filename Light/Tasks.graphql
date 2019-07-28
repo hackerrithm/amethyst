@@ -1,0 +1,6 @@
+query{
+    getAllTasks {
+        text,
+        id
+    }
+}

@@ -75,6 +75,7 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signupButtonTapped:" destination="ff5-EI-Ixg" eventType="touchUpInside" id="gad-W1-0gl"/>
+                                    <segue destination="4cg-i7-6Fj" kind="presentation" id="rqM-Gd-fd3"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,7 +115,109 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1g-uy-Gqj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.98550724637687" y="138.61607142857142"/>
+            <point key="canvasLocation" x="78" y="577"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="ggF-xJ-cqO">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="Cl5-eU-i5s" customClass="CameraViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YKD-zi-Vig">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.3928318478839723" blue="0.14793171302588959" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="c0u-JC-cWP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="add" id="uUC-DO-KcM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOM-2i-J4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="1134"/>
+        </scene>
+        <!--like-->
+        <scene sceneID="dAs-Qh-Bxa">
+            <objects>
+                <viewController storyboardIdentifier="ActivityViewController" id="7Nh-m4-nNa" customClass="ActivityViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZF-Ox-QG3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SnC-zT-CT2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="like" image="heart" id="xwd-4I-uN5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iS8-lC-bLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3283" y="1786"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="TXh-ty-Vmy">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="erM-Ol-yh6" customClass="ProfileViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntF-kF-etb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VSs-Bp-S6z"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="profile" image="profile" id="MoY-jN-Pxy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqv-nn-EBU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3283" y="-899"/>
+        </scene>
+        <!--discover-->
+        <scene sceneID="E3C-A6-19k">
+            <objects>
+                <viewController storyboardIdentifier="DiscoverViewController" id="sYU-YO-52b" customClass="DiscoverViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7PQ-Tr-dbz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZvW-Bm-dGt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="discover" image="search" id="KOh-kE-VX0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erD-tD-3SG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3283" y="445"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="pUJ-k2-oNb">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="Vpn-zM-XCZ" customClass="HomeViewController" customModule="Light" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcK-ac-fpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9V2-Tc-jE6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="home" image="home" id="awR-Y1-5xP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ECS-eD-rxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3284" y="-228"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rIf-3F-MBA">
+            <objects>
+                <tabBarController id="4cg-i7-6Fj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SOH-wl-eKz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vpn-zM-XCZ" kind="relationship" relationship="viewControllers" id="ubp-vo-73Q"/>
+                        <segue destination="sYU-YO-52b" kind="relationship" relationship="viewControllers" id="dTc-vG-W3x"/>
+                        <segue destination="Cl5-eU-i5s" kind="relationship" relationship="viewControllers" id="7Yp-kQ-yeE"/>
+                        <segue destination="7Nh-m4-nNa" kind="relationship" relationship="viewControllers" id="cMj-tl-vX8"/>
+                        <segue destination="erM-Ol-yh6" kind="relationship" relationship="viewControllers" id="c6D-Fy-3Uz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkQ-PL-mMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207" y="139"/>
         </scene>
         <!--Home Page View Controller-->
         <scene sceneID="AKK-kE-sL3">
@@ -170,7 +273,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C6k-c6-Ktu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1517.3913043478262" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1596" y="983"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -220,6 +323,7 @@
                                 <state key="normal" title="Sign in"/>
                                 <connections>
                                     <action selector="signInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0x-tC-PGF"/>
+                                    <segue destination="4cg-i7-6Fj" kind="presentation" id="DGC-bz-Ubk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -253,7 +357,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+            <point key="canvasLocation" x="78" y="-287"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add" width="16" height="16"/>
+        <image name="heart" width="16" height="16"/>
+        <image name="home" width="16" height="16"/>
+        <image name="profile" width="16" height="16"/>
+        <image name="search" width="16" height="16"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="DGC-bz-Ubk"/>
+    </inferredMetricsTieBreakers>
 </document>

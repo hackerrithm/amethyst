@@ -1,0 +1,1111 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05006B498A58D7F8A26BDAC0EA3FA64B /* ResultOrPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF2F736B08A11D9C2F31D720C51DA68 /* ResultOrPromise.swift */; };
+		084874FD75445C40A0C0EFCF75EAC803 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0E57A0FCD033DCF2591EE89A5E9A95E0 /* check-and-run-apollo-codegen.sh in Resources */ = {isa = PBXBuildFile; fileRef = 42B15C5B56E2ACE47632619C2B22112A /* check-and-run-apollo-codegen.sh */; };
+		0F52D2EEF4D3CB5B8BCC8D33BD699BB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B3BE5CF2B35EF0191FB76EB13117E0 /* Utilities.swift */; };
+		120ABB8E306A42CB349EAE5C0C37ECCA /* RecordSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DD968E592F1A07D8FC926813C28651 /* RecordSet.swift */; };
+		2139F3CD00F2798F57FA6B63A27C11F8 /* NormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408F42BA6B25A32CCD462273C9A156C8 /* NormalizedCache.swift */; };
+		25836124757D53B72B445148EF296A10 /* Pods-Light-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D697C053CA681465E1A5A975976C42F /* Pods-Light-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		261C5C30E9F8CA98AD23B3F4BE7C09D8 /* GraphQLQueryWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438DFAFFBAF4C65CE6A12ED124A26E76 /* GraphQLQueryWatcher.swift */; };
+		30B7EC5CCBAFC80A2D721A50BAF1C938 /* GraphQLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1210B4DA4789F27EEC06627545D08099 /* GraphQLError.swift */; };
+		40EDBFE770257924149D1EB6C29C9B64 /* GraphQLDependencyTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB795206769055CA96F42B953BF46BF8 /* GraphQLDependencyTracker.swift */; };
+		597D74F292EF51A7B0D14CE8D77287E7 /* GraphQLSelectionSetMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DB4E0F1299F20D4C3FF442DAD91944 /* GraphQLSelectionSetMapper.swift */; };
+		6C5976D898DC3799C9094CFAAA1C9A9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		751A13CA1F2D6B41555E7C4D8586FACD /* JSONStandardTypeConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE18422F97A95B5BC845BB84FA9F0C3 /* JSONStandardTypeConversions.swift */; };
+		790D5D895F61E57C2167D8F03BC2C9E1 /* Pods-LightUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AB99928C381C8C8875CCD4472BD0367 /* Pods-LightUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B7401ECF183CDACF3470F282AB6118D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7E89BB52104E5C9A071A9CC48B65AEF2 /* GraphQLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BBF68D1A3E02336D2E68A1E3744521 /* GraphQLResponse.swift */; };
+		8787F5B632CF9A0F302CED90AFB694F1 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A4D3862DBFAAF3EB50F3748C58F129 /* Record.swift */; };
+		87E7EB3791F61374EFD8E63E4545FDB9 /* InMemoryNormalizedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1797721C1A147CEE72BC9AD4B0575AD /* InMemoryNormalizedCache.swift */; };
+		95680EC9226653178A302E6FEB244454 /* HTTPNetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334361EB660B055B20703DFA9D8EDAD2 /* HTTPNetworkTransport.swift */; };
+		95B16F88F11EA91821A745A488501F01 /* GraphQLResultNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2441318A28738573AD827F8E78C29A3E /* GraphQLResultNormalizer.swift */; };
+		9674E10F14B21179B45026979006FE19 /* Collections.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE53701444B1B700279872B620269A40 /* Collections.swift */; };
+		973F72124FAB66C4120931656A1D5EC5 /* GraphQLExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5062318EA125AA69E29F3AF97A4D175 /* GraphQLExecutor.swift */; };
+		9AA759B4D4311BCA2E01256C322C48C2 /* GraphQLSelectionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D721269B27737BADD6B4569DBAC5C342 /* GraphQLSelectionSet.swift */; };
+		A62FBD3344BF39931CBAD26167026FB8 /* Pods-Light-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C11DB75B039AD500B897DE14CCF802 /* Pods-Light-dummy.m */; };
+		A797FDA4F186FC9481F192CC0A6D13D0 /* Pods-LightTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1201A81C752DB14A1015353E38154801 /* Pods-LightTests-dummy.m */; };
+		A95D757DE0D3A243A6B261524FE3584E /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854D4AB5B711B78FF83880FC1C3AD89 /* AsynchronousOperation.swift */; };
+		AA885AAC2A1252F55A6B5A2FE60BE156 /* Pods-LightUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0D85019680FEF95363591DBCC00CEF /* Pods-LightUITests-dummy.m */; };
+		AAD3E591C7836677D61E48ED1B067151 /* Locking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4117B3C840B710E65E343C33D6B527 /* Locking.swift */; };
+		B02D7FF97A812594E57E36998242D83F /* GraphQLOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B84D8DC047ACE507E4DD9932829235B /* GraphQLOperation.swift */; };
+		B0E3C5B5FFE47D8E0DF2E5F1E01D0D44 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392C08E4C6605663AE0C7FEC4574C897 /* Result.swift */; };
+		B35F5B7C07D5FBC9D33D561BD7DC8B01 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2C3346A62B17F0059407A40B5C609B /* JSON.swift */; };
+		B751C06583B9F408F3C76410759CA6EA /* GraphQLResponseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CCF1FC7B5C3ED10398E465ADD324F4 /* GraphQLResponseGenerator.swift */; };
+		BC3D7760C671165DD6ABFD5AE5153130 /* Pods-LightTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85850CAD3C9C878A6673DF3447349A38 /* Pods-LightTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C774A69F0F79A828351A109548619CFE /* GraphQLInputValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF81612EF7D8D92D39968F1FA3577382 /* GraphQLInputValue.swift */; };
+		C7BA21EB285B98FE70C39FC6BE8923B7 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FFE8A94E9DD2CDE54BFB1D8AE360A8B /* ApolloClient.swift */; };
+		CB2C2AC79E10889EC840CD6C3D24F96F /* Apollo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416136B265D3BB9A048FB43C44261EF /* Apollo-dummy.m */; };
+		D05B95B0818C14DBB6EDE674B636A995 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563A3D5BD805BF1E37BF8BAC1731F783 /* Promise.swift */; };
+		D07C40C35E6D7667770BE02E7058B932 /* Apollo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1BFEA2476FE0D58D24C67E255431A2D /* Apollo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D96A02B8657B7BCB64C3211E44EF4825 /* JSONSerializationFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D928133F9A4D155BA1A4E71B1A1ABE /* JSONSerializationFormat.swift */; };
+		D9A6ED89859B7845939B3C864D7EA759 /* check-and-run-apollo-cli.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9E561E480060B06483768CD5A03F5656 /* check-and-run-apollo-cli.sh */; };
+		E54965381A172A8BA53D4049B7FEDD41 /* ApolloStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330D7599A68B6C242D5B6DDF1E94366 /* ApolloStore.swift */; };
+		E80A257C39F55BEDB0AF6F4AF035674E /* NetworkTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E638568A68192FE5091ED29341C6A8 /* NetworkTransport.swift */; };
+		EECD898523E8110738B378422D93B69F /* GraphQLResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6388BE45AAB0CA9C430F80F30C742105 /* GraphQLResult.swift */; };
+		F010857A2839A5D0C8CD51F41E6C9782 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		FC5B4DE6F6AD773481EABECF2AA4C6AC /* GraphQLResultAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CBC386ED6DF37F31042A78802FF66A /* GraphQLResultAccumulator.swift */; };
+		FFF1EA5D590D8EF4780539985010797F /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85722FF24016C9CAF69CA39A5E9F649D /* DataLoader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		436EC5D5AB2FB2F2A6F29BE06D117C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC1FE966CD45E255665C9B423E4D212;
+			remoteInfo = "Pods-Light";
+		};
+		71AEB9AC23A508EEB86F7A87A388C42C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30EE3CABB612307A688C40B61BFA74CC;
+			remoteInfo = Apollo;
+		};
+		9F0E158FC014DC7A2E37AB18BC3ED342 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDC1FE966CD45E255665C9B423E4D212;
+			remoteInfo = "Pods-Light";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		018DD54601798075806373C9E1A1DEB2 /* Pods-LightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LightTests.release.xcconfig"; sourceTree = "<group>"; };
+		01A783551FD759FCEEC4AC7CA7F44C64 /* Pods-LightTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LightTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		01E638568A68192FE5091ED29341C6A8 /* NetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkTransport.swift; path = Sources/Apollo/NetworkTransport.swift; sourceTree = "<group>"; };
+		03D923748515FFEF26809FEFE9422C0D /* Pods-Light.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Light.modulemap"; sourceTree = "<group>"; };
+		07C11DB75B039AD500B897DE14CCF802 /* Pods-Light-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Light-dummy.m"; sourceTree = "<group>"; };
+		0FFE8A94E9DD2CDE54BFB1D8AE360A8B /* ApolloClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloClient.swift; path = Sources/Apollo/ApolloClient.swift; sourceTree = "<group>"; };
+		1201A81C752DB14A1015353E38154801 /* Pods-LightTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LightTests-dummy.m"; sourceTree = "<group>"; };
+		1210B4DA4789F27EEC06627545D08099 /* GraphQLError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLError.swift; path = Sources/Apollo/GraphQLError.swift; sourceTree = "<group>"; };
+		14B3BE5CF2B35EF0191FB76EB13117E0 /* Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = Sources/Apollo/Utilities.swift; sourceTree = "<group>"; };
+		16BC57128E1EDE489C75964C77682921 /* Pods-LightUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LightUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		23CBC386ED6DF37F31042A78802FF66A /* GraphQLResultAccumulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultAccumulator.swift; path = Sources/Apollo/GraphQLResultAccumulator.swift; sourceTree = "<group>"; };
+		2441318A28738573AD827F8E78C29A3E /* GraphQLResultNormalizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResultNormalizer.swift; path = Sources/Apollo/GraphQLResultNormalizer.swift; sourceTree = "<group>"; };
+		2AF2F736B08A11D9C2F31D720C51DA68 /* ResultOrPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultOrPromise.swift; path = Sources/Apollo/ResultOrPromise.swift; sourceTree = "<group>"; };
+		2C42DB5114B15676401F085539C753B9 /* Pods-LightUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LightUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		334361EB660B055B20703DFA9D8EDAD2 /* HTTPNetworkTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPNetworkTransport.swift; path = Sources/Apollo/HTTPNetworkTransport.swift; sourceTree = "<group>"; };
+		35DD968E592F1A07D8FC926813C28651 /* RecordSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordSet.swift; path = Sources/Apollo/RecordSet.swift; sourceTree = "<group>"; };
+		392C08E4C6605663AE0C7FEC4574C897 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Apollo/Result.swift; sourceTree = "<group>"; };
+		3AB99928C381C8C8875CCD4472BD0367 /* Pods-LightUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LightUITests-umbrella.h"; sourceTree = "<group>"; };
+		3BFFB119431EF25A6548F9826ABE9504 /* Apollo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Apollo.modulemap; sourceTree = "<group>"; };
+		408F42BA6B25A32CCD462273C9A156C8 /* NormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NormalizedCache.swift; path = Sources/Apollo/NormalizedCache.swift; sourceTree = "<group>"; };
+		40CCF1FC7B5C3ED10398E465ADD324F4 /* GraphQLResponseGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponseGenerator.swift; path = Sources/Apollo/GraphQLResponseGenerator.swift; sourceTree = "<group>"; };
+		42B15C5B56E2ACE47632619C2B22112A /* check-and-run-apollo-codegen.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "check-and-run-apollo-codegen.sh"; path = "scripts/check-and-run-apollo-codegen.sh"; sourceTree = "<group>"; };
+		438DFAFFBAF4C65CE6A12ED124A26E76 /* GraphQLQueryWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLQueryWatcher.swift; path = Sources/Apollo/GraphQLQueryWatcher.swift; sourceTree = "<group>"; };
+		46F5BBCD2D0227929DA3C9CB3D50D031 /* Pods_LightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LightTests.framework; path = "Pods-LightTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0D85019680FEF95363591DBCC00CEF /* Pods-LightUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LightUITests-dummy.m"; sourceTree = "<group>"; };
+		563A3D5BD805BF1E37BF8BAC1731F783 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Apollo/Promise.swift; sourceTree = "<group>"; };
+		58CE096D67A5FB59D07EE18D7C17492B /* Pods-Light.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Light.release.xcconfig"; sourceTree = "<group>"; };
+		58DB4E0F1299F20D4C3FF442DAD91944 /* GraphQLSelectionSetMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSetMapper.swift; path = Sources/Apollo/GraphQLSelectionSetMapper.swift; sourceTree = "<group>"; };
+		5B4117B3C840B710E65E343C33D6B527 /* Locking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Locking.swift; path = Sources/Apollo/Locking.swift; sourceTree = "<group>"; };
+		5BF4A09AC8E5D8B3D61C4E6E1D7B6813 /* Pods-Light-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Light-frameworks.sh"; sourceTree = "<group>"; };
+		6388BE45AAB0CA9C430F80F30C742105 /* GraphQLResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResult.swift; path = Sources/Apollo/GraphQLResult.swift; sourceTree = "<group>"; };
+		68D928133F9A4D155BA1A4E71B1A1ABE /* JSONSerializationFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONSerializationFormat.swift; path = Sources/Apollo/JSONSerializationFormat.swift; sourceTree = "<group>"; };
+		766AE1364394FBD2DE96482306E3341C /* Pods_Light.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Light.framework; path = "Pods-Light.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B84D8DC047ACE507E4DD9932829235B /* GraphQLOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLOperation.swift; path = Sources/Apollo/GraphQLOperation.swift; sourceTree = "<group>"; };
+		7D697C053CA681465E1A5A975976C42F /* Pods-Light-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Light-umbrella.h"; sourceTree = "<group>"; };
+		7D8BEAED85AD726CA1279BC10C718E71 /* Pods-LightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E4FAB9A145371CF77F7A4635004EC4C /* Pods-Light-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Light-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8416136B265D3BB9A048FB43C44261EF /* Apollo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Apollo-dummy.m"; sourceTree = "<group>"; };
+		84EE8980B746649624EE697E397B4D9F /* Pods_LightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LightUITests.framework; path = "Pods-LightUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85722FF24016C9CAF69CA39A5E9F649D /* DataLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataLoader.swift; path = Sources/Apollo/DataLoader.swift; sourceTree = "<group>"; };
+		85850CAD3C9C878A6673DF3447349A38 /* Pods-LightTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LightTests-umbrella.h"; sourceTree = "<group>"; };
+		86BBF68D1A3E02336D2E68A1E3744521 /* GraphQLResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLResponse.swift; path = Sources/Apollo/GraphQLResponse.swift; sourceTree = "<group>"; };
+		87829F8BAAAADCBA4E18865AF2BE2741 /* Pods-LightTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LightTests.modulemap"; sourceTree = "<group>"; };
+		8DE18422F97A95B5BC845BB84FA9F0C3 /* JSONStandardTypeConversions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStandardTypeConversions.swift; path = Sources/Apollo/JSONStandardTypeConversions.swift; sourceTree = "<group>"; };
+		8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Apollo.framework; path = Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EA2FDFF6DC3B66D3C6FC5296D65FF7 /* Pods-LightUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LightUITests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E561E480060B06483768CD5A03F5656 /* check-and-run-apollo-cli.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; name = "check-and-run-apollo-cli.sh"; path = "scripts/check-and-run-apollo-cli.sh"; sourceTree = "<group>"; };
+		A330D7599A68B6C242D5B6DDF1E94366 /* ApolloStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApolloStore.swift; path = Sources/Apollo/ApolloStore.swift; sourceTree = "<group>"; };
+		B5062318EA125AA69E29F3AF97A4D175 /* GraphQLExecutor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLExecutor.swift; path = Sources/Apollo/GraphQLExecutor.swift; sourceTree = "<group>"; };
+		BC2C3346A62B17F0059407A40B5C609B /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Apollo/JSON.swift; sourceTree = "<group>"; };
+		BF245865616EAC0F6D5EE430A059B6E0 /* Apollo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-prefix.pch"; sourceTree = "<group>"; };
+		C854D4AB5B711B78FF83880FC1C3AD89 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsynchronousOperation.swift; path = Sources/Apollo/AsynchronousOperation.swift; sourceTree = "<group>"; };
+		CC4D04EC9F1C4752BA436268EBB37228 /* Pods-LightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE53701444B1B700279872B620269A40 /* Collections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collections.swift; path = Sources/Apollo/Collections.swift; sourceTree = "<group>"; };
+		D721269B27737BADD6B4569DBAC5C342 /* GraphQLSelectionSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLSelectionSet.swift; path = Sources/Apollo/GraphQLSelectionSet.swift; sourceTree = "<group>"; };
+		DB795206769055CA96F42B953BF46BF8 /* GraphQLDependencyTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLDependencyTracker.swift; path = Sources/Apollo/GraphQLDependencyTracker.swift; sourceTree = "<group>"; };
+		E149062D0A525098E347D0CF847F6609 /* Pods-LightUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LightUITests-Info.plist"; sourceTree = "<group>"; };
+		E35980CA3167530AE25BD9D863E331AA /* Pods-LightTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LightTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E3FA8EE671D1738AA1359CD2EB9BF5FC /* Pods-Light-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Light-Info.plist"; sourceTree = "<group>"; };
+		E6506BC4BF40647149DD375EC3189207 /* Apollo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Apollo-Info.plist"; sourceTree = "<group>"; };
+		E6C742879A2A809BB004F91ACBD96552 /* Pods-LightTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LightTests-Info.plist"; sourceTree = "<group>"; };
+		E8A4D3862DBFAAF3EB50F3748C58F129 /* Record.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Record.swift; path = Sources/Apollo/Record.swift; sourceTree = "<group>"; };
+		EF81612EF7D8D92D39968F1FA3577382 /* GraphQLInputValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphQLInputValue.swift; path = Sources/Apollo/GraphQLInputValue.swift; sourceTree = "<group>"; };
+		F1797721C1A147CEE72BC9AD4B0575AD /* InMemoryNormalizedCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryNormalizedCache.swift; path = Sources/Apollo/InMemoryNormalizedCache.swift; sourceTree = "<group>"; };
+		F1BFEA2476FE0D58D24C67E255431A2D /* Apollo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Apollo-umbrella.h"; sourceTree = "<group>"; };
+		F25C915949BCE4E666FF438A835A7DB6 /* Pods-Light-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Light-acknowledgements.plist"; sourceTree = "<group>"; };
+		F2DA6CC2434FDF7DB9F57F845205BEFA /* Apollo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Apollo.xcconfig; sourceTree = "<group>"; };
+		F7A734CC3818B7CA03932AE0B774F4B7 /* Pods-Light.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Light.debug.xcconfig"; sourceTree = "<group>"; };
+		F924B302B4463C1357F5CADD41A5E9D6 /* Pods-LightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LightUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03900AB878B4B394681E1B02084CE24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F010857A2839A5D0C8CD51F41E6C9782 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		732BC52064E7AA638395915C6E6B5BA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5976D898DC3799C9094CFAAA1C9A9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2F77B8D67BB2A81DADE27AC4D16E9ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7401ECF183CDACF3470F282AB6118D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8B6F363E54EF931B2B7C07CA6EF86A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				084874FD75445C40A0C0EFCF75EAC803 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12839252D84F9B73C338C66767BF4DED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9E561E480060B06483768CD5A03F5656 /* check-and-run-apollo-cli.sh */,
+				42B15C5B56E2ACE47632619C2B22112A /* check-and-run-apollo-codegen.sh */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		147A2010CD3A05F1BC5938DBAC7B4D9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E15CD0EBD3480315633C81242C2EC026 /* Apollo */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		229658034B8388196D17D4C712F25E96 /* Pods-LightTests */ = {
+			isa = PBXGroup;
+			children = (
+				87829F8BAAAADCBA4E18865AF2BE2741 /* Pods-LightTests.modulemap */,
+				01A783551FD759FCEEC4AC7CA7F44C64 /* Pods-LightTests-acknowledgements.markdown */,
+				E35980CA3167530AE25BD9D863E331AA /* Pods-LightTests-acknowledgements.plist */,
+				1201A81C752DB14A1015353E38154801 /* Pods-LightTests-dummy.m */,
+				E6C742879A2A809BB004F91ACBD96552 /* Pods-LightTests-Info.plist */,
+				85850CAD3C9C878A6673DF3447349A38 /* Pods-LightTests-umbrella.h */,
+				CC4D04EC9F1C4752BA436268EBB37228 /* Pods-LightTests.debug.xcconfig */,
+				018DD54601798075806373C9E1A1DEB2 /* Pods-LightTests.release.xcconfig */,
+			);
+			name = "Pods-LightTests";
+			path = "Target Support Files/Pods-LightTests";
+			sourceTree = "<group>";
+		};
+		25AD0CDEE3E0780AD8AD542DC330BEFD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0FFE8A94E9DD2CDE54BFB1D8AE360A8B /* ApolloClient.swift */,
+				A330D7599A68B6C242D5B6DDF1E94366 /* ApolloStore.swift */,
+				C854D4AB5B711B78FF83880FC1C3AD89 /* AsynchronousOperation.swift */,
+				CE53701444B1B700279872B620269A40 /* Collections.swift */,
+				85722FF24016C9CAF69CA39A5E9F649D /* DataLoader.swift */,
+				DB795206769055CA96F42B953BF46BF8 /* GraphQLDependencyTracker.swift */,
+				1210B4DA4789F27EEC06627545D08099 /* GraphQLError.swift */,
+				B5062318EA125AA69E29F3AF97A4D175 /* GraphQLExecutor.swift */,
+				EF81612EF7D8D92D39968F1FA3577382 /* GraphQLInputValue.swift */,
+				7B84D8DC047ACE507E4DD9932829235B /* GraphQLOperation.swift */,
+				438DFAFFBAF4C65CE6A12ED124A26E76 /* GraphQLQueryWatcher.swift */,
+				86BBF68D1A3E02336D2E68A1E3744521 /* GraphQLResponse.swift */,
+				40CCF1FC7B5C3ED10398E465ADD324F4 /* GraphQLResponseGenerator.swift */,
+				6388BE45AAB0CA9C430F80F30C742105 /* GraphQLResult.swift */,
+				23CBC386ED6DF37F31042A78802FF66A /* GraphQLResultAccumulator.swift */,
+				2441318A28738573AD827F8E78C29A3E /* GraphQLResultNormalizer.swift */,
+				D721269B27737BADD6B4569DBAC5C342 /* GraphQLSelectionSet.swift */,
+				58DB4E0F1299F20D4C3FF442DAD91944 /* GraphQLSelectionSetMapper.swift */,
+				334361EB660B055B20703DFA9D8EDAD2 /* HTTPNetworkTransport.swift */,
+				F1797721C1A147CEE72BC9AD4B0575AD /* InMemoryNormalizedCache.swift */,
+				BC2C3346A62B17F0059407A40B5C609B /* JSON.swift */,
+				68D928133F9A4D155BA1A4E71B1A1ABE /* JSONSerializationFormat.swift */,
+				8DE18422F97A95B5BC845BB84FA9F0C3 /* JSONStandardTypeConversions.swift */,
+				5B4117B3C840B710E65E343C33D6B527 /* Locking.swift */,
+				01E638568A68192FE5091ED29341C6A8 /* NetworkTransport.swift */,
+				408F42BA6B25A32CCD462273C9A156C8 /* NormalizedCache.swift */,
+				563A3D5BD805BF1E37BF8BAC1731F783 /* Promise.swift */,
+				E8A4D3862DBFAAF3EB50F3748C58F129 /* Record.swift */,
+				35DD968E592F1A07D8FC926813C28651 /* RecordSet.swift */,
+				392C08E4C6605663AE0C7FEC4574C897 /* Result.swift */,
+				2AF2F736B08A11D9C2F31D720C51DA68 /* ResultOrPromise.swift */,
+				14B3BE5CF2B35EF0191FB76EB13117E0 /* Utilities.swift */,
+				12839252D84F9B73C338C66767BF4DED /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		446B3A8E6E6C2864C922338E9367001A /* Pods-LightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				90EA2FDFF6DC3B66D3C6FC5296D65FF7 /* Pods-LightUITests.modulemap */,
+				2C42DB5114B15676401F085539C753B9 /* Pods-LightUITests-acknowledgements.markdown */,
+				16BC57128E1EDE489C75964C77682921 /* Pods-LightUITests-acknowledgements.plist */,
+				4C0D85019680FEF95363591DBCC00CEF /* Pods-LightUITests-dummy.m */,
+				E149062D0A525098E347D0CF847F6609 /* Pods-LightUITests-Info.plist */,
+				3AB99928C381C8C8875CCD4472BD0367 /* Pods-LightUITests-umbrella.h */,
+				7D8BEAED85AD726CA1279BC10C718E71 /* Pods-LightUITests.debug.xcconfig */,
+				F924B302B4463C1357F5CADD41A5E9D6 /* Pods-LightUITests.release.xcconfig */,
+			);
+			name = "Pods-LightUITests";
+			path = "Target Support Files/Pods-LightUITests";
+			sourceTree = "<group>";
+		};
+		7A90394827B4BC4F6EC4CA558E271213 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BFFB119431EF25A6548F9826ABE9504 /* Apollo.modulemap */,
+				F2DA6CC2434FDF7DB9F57F845205BEFA /* Apollo.xcconfig */,
+				8416136B265D3BB9A048FB43C44261EF /* Apollo-dummy.m */,
+				E6506BC4BF40647149DD375EC3189207 /* Apollo-Info.plist */,
+				BF245865616EAC0F6D5EE430A059B6E0 /* Apollo-prefix.pch */,
+				F1BFEA2476FE0D58D24C67E255431A2D /* Apollo-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Apollo";
+			sourceTree = "<group>";
+		};
+		B17B610232A846E9F2A119729A162C32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo.framework */,
+				766AE1364394FBD2DE96482306E3341C /* Pods_Light.framework */,
+				46F5BBCD2D0227929DA3C9CB3D50D031 /* Pods_LightTests.framework */,
+				84EE8980B746649624EE697E397B4D9F /* Pods_LightUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				147A2010CD3A05F1BC5938DBAC7B4D9C /* Pods */,
+				B17B610232A846E9F2A119729A162C32 /* Products */,
+				EADED368D44F5EEAD8AB39111B430091 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E15CD0EBD3480315633C81242C2EC026 /* Apollo */ = {
+			isa = PBXGroup;
+			children = (
+				25AD0CDEE3E0780AD8AD542DC330BEFD /* Core */,
+				7A90394827B4BC4F6EC4CA558E271213 /* Support Files */,
+			);
+			name = Apollo;
+			path = Apollo;
+			sourceTree = "<group>";
+		};
+		E617A211521990C81A3A4FDD558D2A2C /* Pods-Light */ = {
+			isa = PBXGroup;
+			children = (
+				03D923748515FFEF26809FEFE9422C0D /* Pods-Light.modulemap */,
+				7E4FAB9A145371CF77F7A4635004EC4C /* Pods-Light-acknowledgements.markdown */,
+				F25C915949BCE4E666FF438A835A7DB6 /* Pods-Light-acknowledgements.plist */,
+				07C11DB75B039AD500B897DE14CCF802 /* Pods-Light-dummy.m */,
+				5BF4A09AC8E5D8B3D61C4E6E1D7B6813 /* Pods-Light-frameworks.sh */,
+				E3FA8EE671D1738AA1359CD2EB9BF5FC /* Pods-Light-Info.plist */,
+				7D697C053CA681465E1A5A975976C42F /* Pods-Light-umbrella.h */,
+				F7A734CC3818B7CA03932AE0B774F4B7 /* Pods-Light.debug.xcconfig */,
+				58CE096D67A5FB59D07EE18D7C17492B /* Pods-Light.release.xcconfig */,
+			);
+			name = "Pods-Light";
+			path = "Target Support Files/Pods-Light";
+			sourceTree = "<group>";
+		};
+		EADED368D44F5EEAD8AB39111B430091 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E617A211521990C81A3A4FDD558D2A2C /* Pods-Light */,
+				229658034B8388196D17D4C712F25E96 /* Pods-LightTests */,
+				446B3A8E6E6C2864C922338E9367001A /* Pods-LightUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1EC005C73206C932DFE8F9369B7804F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790D5D895F61E57C2167D8F03BC2C9E1 /* Pods-LightUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75C699C6F86C51152CDE18519438097F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25836124757D53B72B445148EF296A10 /* Pods-Light-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8681F152D4917EC69489F37244423CF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D07C40C35E6D7667770BE02E7058B932 /* Apollo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C3CFA2B5D494EABCFFBEC98D9E07209 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC3D7760C671165DD6ABFD5AE5153130 /* Pods-LightTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30EE3CABB612307A688C40B61BFA74CC /* Apollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDB544C8EEC7EFBB69948BA3082B81D1 /* Build configuration list for PBXNativeTarget "Apollo" */;
+			buildPhases = (
+				8681F152D4917EC69489F37244423CF2 /* Headers */,
+				85E38EB9A9E24418DDC0903AB2464BCE /* Sources */,
+				A2F77B8D67BB2A81DADE27AC4D16E9ED /* Frameworks */,
+				A7574E33FA1E960A24A9BDFC606B754A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Apollo;
+			productName = Apollo;
+			productReference = 8F1FA46A3C7AA9081BA3650A49BDE9FE /* Apollo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		31118253686FD78638553C23BF757847 /* Pods-LightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA04A60A2BA57ED212B873A781D0DED8 /* Build configuration list for PBXNativeTarget "Pods-LightUITests" */;
+			buildPhases = (
+				1EC005C73206C932DFE8F9369B7804F9 /* Headers */,
+				316BA8A7AFFCCDC7E855545E8F564CC4 /* Sources */,
+				03900AB878B4B394681E1B02084CE24D /* Frameworks */,
+				59BC6F97BBD75EE9172F66D48608F235 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F18373CD09F8A476F8306B134D63D6B /* PBXTargetDependency */,
+			);
+			name = "Pods-LightUITests";
+			productName = "Pods-LightUITests";
+			productReference = 84EE8980B746649624EE697E397B4D9F /* Pods_LightUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6326A5978EB74A23A6554BF1D08E3F5E /* Pods-LightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDD994A89D920F4908B7DD8E54838FD /* Build configuration list for PBXNativeTarget "Pods-LightTests" */;
+			buildPhases = (
+				8C3CFA2B5D494EABCFFBEC98D9E07209 /* Headers */,
+				2A15451EF3C365D20241876E2B1D5365 /* Sources */,
+				BF8B6F363E54EF931B2B7C07CA6EF86A /* Frameworks */,
+				082DDBF862C4B6F4A04E252A8C1933D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F37EB778D6FCA7F9F978DD10185D839C /* PBXTargetDependency */,
+			);
+			name = "Pods-LightTests";
+			productName = "Pods-LightTests";
+			productReference = 46F5BBCD2D0227929DA3C9CB3D50D031 /* Pods_LightTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDC1FE966CD45E255665C9B423E4D212 /* Pods-Light */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A9492ECF62C69FF7A01ED79F2C9FB52 /* Build configuration list for PBXNativeTarget "Pods-Light" */;
+			buildPhases = (
+				75C699C6F86C51152CDE18519438097F /* Headers */,
+				0CE3B054A42A98F2CFFEA25605ABDD20 /* Sources */,
+				732BC52064E7AA638395915C6E6B5BA2 /* Frameworks */,
+				AF82EEB92F6C540FC264F01FF9312AFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA4C6D427FB0C64BEB7800D61848B4F /* PBXTargetDependency */,
+			);
+			name = "Pods-Light";
+			productName = "Pods-Light";
+			productReference = 766AE1364394FBD2DE96482306E3341C /* Pods_Light.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B17B610232A846E9F2A119729A162C32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30EE3CABB612307A688C40B61BFA74CC /* Apollo */,
+				EDC1FE966CD45E255665C9B423E4D212 /* Pods-Light */,
+				6326A5978EB74A23A6554BF1D08E3F5E /* Pods-LightTests */,
+				31118253686FD78638553C23BF757847 /* Pods-LightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		082DDBF862C4B6F4A04E252A8C1933D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59BC6F97BBD75EE9172F66D48608F235 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7574E33FA1E960A24A9BDFC606B754A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A6ED89859B7845939B3C864D7EA759 /* check-and-run-apollo-cli.sh in Resources */,
+				0E57A0FCD033DCF2591EE89A5E9A95E0 /* check-and-run-apollo-codegen.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF82EEB92F6C540FC264F01FF9312AFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CE3B054A42A98F2CFFEA25605ABDD20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62FBD3344BF39931CBAD26167026FB8 /* Pods-Light-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A15451EF3C365D20241876E2B1D5365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A797FDA4F186FC9481F192CC0A6D13D0 /* Pods-LightTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316BA8A7AFFCCDC7E855545E8F564CC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA885AAC2A1252F55A6B5A2FE60BE156 /* Pods-LightUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E38EB9A9E24418DDC0903AB2464BCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB2C2AC79E10889EC840CD6C3D24F96F /* Apollo-dummy.m in Sources */,
+				C7BA21EB285B98FE70C39FC6BE8923B7 /* ApolloClient.swift in Sources */,
+				E54965381A172A8BA53D4049B7FEDD41 /* ApolloStore.swift in Sources */,
+				A95D757DE0D3A243A6B261524FE3584E /* AsynchronousOperation.swift in Sources */,
+				9674E10F14B21179B45026979006FE19 /* Collections.swift in Sources */,
+				FFF1EA5D590D8EF4780539985010797F /* DataLoader.swift in Sources */,
+				40EDBFE770257924149D1EB6C29C9B64 /* GraphQLDependencyTracker.swift in Sources */,
+				30B7EC5CCBAFC80A2D721A50BAF1C938 /* GraphQLError.swift in Sources */,
+				973F72124FAB66C4120931656A1D5EC5 /* GraphQLExecutor.swift in Sources */,
+				C774A69F0F79A828351A109548619CFE /* GraphQLInputValue.swift in Sources */,
+				B02D7FF97A812594E57E36998242D83F /* GraphQLOperation.swift in Sources */,
+				261C5C30E9F8CA98AD23B3F4BE7C09D8 /* GraphQLQueryWatcher.swift in Sources */,
+				7E89BB52104E5C9A071A9CC48B65AEF2 /* GraphQLResponse.swift in Sources */,
+				B751C06583B9F408F3C76410759CA6EA /* GraphQLResponseGenerator.swift in Sources */,
+				EECD898523E8110738B378422D93B69F /* GraphQLResult.swift in Sources */,
+				FC5B4DE6F6AD773481EABECF2AA4C6AC /* GraphQLResultAccumulator.swift in Sources */,
+				95B16F88F11EA91821A745A488501F01 /* GraphQLResultNormalizer.swift in Sources */,
+				9AA759B4D4311BCA2E01256C322C48C2 /* GraphQLSelectionSet.swift in Sources */,
+				597D74F292EF51A7B0D14CE8D77287E7 /* GraphQLSelectionSetMapper.swift in Sources */,
+				95680EC9226653178A302E6FEB244454 /* HTTPNetworkTransport.swift in Sources */,
+				87E7EB3791F61374EFD8E63E4545FDB9 /* InMemoryNormalizedCache.swift in Sources */,
+				B35F5B7C07D5FBC9D33D561BD7DC8B01 /* JSON.swift in Sources */,
+				D96A02B8657B7BCB64C3211E44EF4825 /* JSONSerializationFormat.swift in Sources */,
+				751A13CA1F2D6B41555E7C4D8586FACD /* JSONStandardTypeConversions.swift in Sources */,
+				AAD3E591C7836677D61E48ED1B067151 /* Locking.swift in Sources */,
+				E80A257C39F55BEDB0AF6F4AF035674E /* NetworkTransport.swift in Sources */,
+				2139F3CD00F2798F57FA6B63A27C11F8 /* NormalizedCache.swift in Sources */,
+				D05B95B0818C14DBB6EDE674B636A995 /* Promise.swift in Sources */,
+				8787F5B632CF9A0F302CED90AFB694F1 /* Record.swift in Sources */,
+				120ABB8E306A42CB349EAE5C0C37ECCA /* RecordSet.swift in Sources */,
+				B0E3C5B5FFE47D8E0DF2E5F1E01D0D44 /* Result.swift in Sources */,
+				05006B498A58D7F8A26BDAC0EA3FA64B /* ResultOrPromise.swift in Sources */,
+				0F52D2EEF4D3CB5B8BCC8D33BD699BB6 /* Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F18373CD09F8A476F8306B134D63D6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Light";
+			target = EDC1FE966CD45E255665C9B423E4D212 /* Pods-Light */;
+			targetProxy = 9F0E158FC014DC7A2E37AB18BC3ED342 /* PBXContainerItemProxy */;
+		};
+		F37EB778D6FCA7F9F978DD10185D839C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Light";
+			target = EDC1FE966CD45E255665C9B423E4D212 /* Pods-Light */;
+			targetProxy = 436EC5D5AB2FB2F2A6F29BE06D117C68 /* PBXContainerItemProxy */;
+		};
+		FDA4C6D427FB0C64BEB7800D61848B4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Apollo;
+			target = 30EE3CABB612307A688C40B61BFA74CC /* Apollo */;
+			targetProxy = 71AEB9AC23A508EEB86F7A87A388C42C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F488026BE6F086F651B6CC168645494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DA6CC2434FDF7DB9F57F845205BEFA /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		155410153D3E34AE0D7A2F73627F1BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F924B302B4463C1357F5CADD41A5E9D6 /* Pods-LightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LightUITests/Pods-LightUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LightUITests/Pods-LightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4615DB43A72F7C9F5BCB42D51DF292C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D8BEAED85AD726CA1279BC10C718E71 /* Pods-LightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LightUITests/Pods-LightUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LightUITests/Pods-LightUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57DE990EA2B8D6FE41D1FD6AA823FE14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018DD54601798075806373C9E1A1DEB2 /* Pods-LightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LightTests/Pods-LightTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LightTests/Pods-LightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		60252EA47FE48108DE401F6B0478B381 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7A734CC3818B7CA03932AE0B774F4B7 /* Pods-Light.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Light/Pods-Light-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Light/Pods-Light.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		69C5AA646D377295511DD0B088CBACCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DA6CC2434FDF7DB9F57F845205BEFA /* Apollo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Apollo/Apollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Apollo/Apollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Apollo/Apollo.modulemap";
+				PRODUCT_MODULE_NAME = Apollo;
+				PRODUCT_NAME = Apollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		94B8275C430BB0CD1539D1C605C3C70D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CE096D67A5FB59D07EE18D7C17492B /* Pods-Light.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Light/Pods-Light-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Light/Pods-Light.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F9EF1264392C006204C6C7333A52F3F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4D04EC9F1C4752BA436268EBB37228 /* Pods-LightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LightTests/Pods-LightTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LightTests/Pods-LightTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A9492ECF62C69FF7A01ED79F2C9FB52 /* Build configuration list for PBXNativeTarget "Pods-Light" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60252EA47FE48108DE401F6B0478B381 /* Debug */,
+				94B8275C430BB0CD1539D1C605C3C70D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDD994A89D920F4908B7DD8E54838FD /* Build configuration list for PBXNativeTarget "Pods-LightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9EF1264392C006204C6C7333A52F3F2 /* Debug */,
+				57DE990EA2B8D6FE41D1FD6AA823FE14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDB544C8EEC7EFBB69948BA3082B81D1 /* Build configuration list for PBXNativeTarget "Apollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69C5AA646D377295511DD0B088CBACCC /* Debug */,
+				0F488026BE6F086F651B6CC168645494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA04A60A2BA57ED212B873A781D0DED8 /* Build configuration list for PBXNativeTarget "Pods-LightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4615DB43A72F7C9F5BCB42D51DF292C1 /* Debug */,
+				155410153D3E34AE0D7A2F73627F1BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
