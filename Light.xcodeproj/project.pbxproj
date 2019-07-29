@@ -16,6 +16,7 @@
 		EC185AFF22EE2EAA0006D205 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC185AFE22EE2EAA0006D205 /* CameraViewController.swift */; };
 		EC185B0122EE2EF20006D205 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC185B0022EE2EF20006D205 /* ActivityViewController.swift */; };
 		EC185B0322EE2F170006D205 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC185B0222EE2F170006D205 /* ProfileViewController.swift */; };
+		EC185B0522EE6DC00006D205 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC185B0422EE6DC00006D205 /* GoogleService-Info.plist */; };
 		EC5343BB22DD70D00085A939 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343BA22DD70D00085A939 /* AppDelegate.swift */; };
 		EC5343BD22DD70D00085A939 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343BC22DD70D00085A939 /* ViewController.swift */; };
 		EC5343C022DD70D00085A939 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5343BE22DD70D00085A939 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		EC185AFE22EE2EAA0006D205 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		EC185B0022EE2EF20006D205 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		EC185B0222EE2F170006D205 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC185B0422EE6DC00006D205 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC5343B722DD70D00085A939 /* Light.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Light.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5343BA22DD70D00085A939 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5343BC22DD70D00085A939 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +74,7 @@
 		EC5343CF22DD70D20085A939 /* LightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightTests.swift; sourceTree = "<group>"; };
 		EC5343D122DD70D20085A939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5343D622DD70D20085A939 /* LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../SignInViewController.swift; sourceTree = "<group>"; };
+		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tasks.graphql; sourceTree = "<group>"; };
@@ -129,6 +131,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EC05B1A222EE9550004CA407 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC5343BC22DD70D00085A939 /* ViewController.swift */,
+				EC185AFA22EE2DF50006D205 /* HomeViewController.swift */,
+				EC185B0222EE2F170006D205 /* ProfileViewController.swift */,
+				EC185B0022EE2EF20006D205 /* ActivityViewController.swift */,
+				EC185AFE22EE2EAA0006D205 /* CameraViewController.swift */,
+				EC185AFC22EE2E780006D205 /* DiscoverViewController.swift */,
+				EC5343EA22DD969F0085A939 /* SignInViewController.swift */,
+				ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */,
+				ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		EC5343AE22DD70D00085A939 = {
 			isa = PBXGroup;
 			children = (
@@ -153,22 +171,15 @@
 		EC5343B922DD70D00085A939 /* Light */ = {
 			isa = PBXGroup;
 			children = (
+				EC05B1A222EE9550004CA407 /* ViewControllers */,
 				ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */,
 				EC5343BA22DD70D00085A939 /* AppDelegate.swift */,
 				EC185AF822EE09B60006D205 /* schema.json */,
-				EC5343BC22DD70D00085A939 /* ViewController.swift */,
+				EC185B0422EE6DC00006D205 /* GoogleService-Info.plist */,
 				EC5343BE22DD70D00085A939 /* Main.storyboard */,
-				EC185AFA22EE2DF50006D205 /* HomeViewController.swift */,
-				EC185B0222EE2F170006D205 /* ProfileViewController.swift */,
-				EC185B0022EE2EF20006D205 /* ActivityViewController.swift */,
-				EC185AFE22EE2EAA0006D205 /* CameraViewController.swift */,
-				EC185AFC22EE2E780006D205 /* DiscoverViewController.swift */,
 				EC5343C122DD70D20085A939 /* Assets.xcassets */,
 				EC5343C322DD70D20085A939 /* LaunchScreen.storyboard */,
 				EC5343C622DD70D20085A939 /* Info.plist */,
-				EC5343EA22DD969F0085A939 /* SignInViewController.swift */,
-				ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */,
-				ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */,
 			);
 			path = Light;
 			sourceTree = "<group>";
@@ -296,6 +307,7 @@
 				EC5343C522DD70D20085A939 /* LaunchScreen.storyboard in Resources */,
 				EC5343C222DD70D20085A939 /* Assets.xcassets in Resources */,
 				EC5343C022DD70D00085A939 /* Main.storyboard in Resources */,
+				EC185B0522EE6DC00006D205 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

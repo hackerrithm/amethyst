@@ -7,6 +7,10 @@ target 'Light' do
 
   # Pods for Light
   pod 'Apollo', '~> 0.10.0'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 
   target 'LightTests' do
     inherit! :search_paths

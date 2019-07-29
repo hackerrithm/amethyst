@@ -8,6 +8,7 @@
 
 import UIKit
 import Apollo
+import Firebase
 
 let graphQLEndpoint = "http://localhost:9000/query"
 let apollo = ApolloClient(url: URL(string: graphQLEndpoint)!)
@@ -21,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         // change the color of the tab bar items
+        FirebaseApp.configure()
         UITabBar.appearance().tintColor = .black
         return true
     }
