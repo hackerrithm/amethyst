@@ -26,6 +26,8 @@
 		EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343EA22DD969F0085A939 /* SignInViewController.swift */; };
 		ECBB362C22DEBC5500D66769 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */; };
 		ECBB362E22DEC2DB00D66769 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */; };
+		ECD1A68422EFEE08007A43DB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1A68322EFEE08007A43DB /* AuthService.swift */; };
+		ECD1A68622F006FD007A43DB /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1A68522F006FD007A43DB /* Config.swift */; };
 		ECE2A42722E38BBC00D0FB7C /* Tasks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		ECD1A68322EFEE08007A43DB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		ECD1A68522F006FD007A43DB /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Tasks.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,10 +175,12 @@
 		EC5343B922DD70D00085A939 /* Light */ = {
 			isa = PBXGroup;
 			children = (
-				EC05B1A222EE9550004CA407 /* ViewControllers */,
-				ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */,
 				EC5343BA22DD70D00085A939 /* AppDelegate.swift */,
+				ECD1A68322EFEE08007A43DB /* AuthService.swift */,
+				ECD1A68522F006FD007A43DB /* Config.swift */,
 				EC185AF822EE09B60006D205 /* schema.json */,
+				ECE2A42622E38BBC00D0FB7C /* Tasks.graphql */,
+				EC05B1A222EE9550004CA407 /* ViewControllers */,
 				EC185B0422EE6DC00006D205 /* GoogleService-Info.plist */,
 				EC5343BE22DD70D00085A939 /* Main.storyboard */,
 				EC5343C122DD70D20085A939 /* Assets.xcassets */,
@@ -441,6 +447,8 @@
 				EC185B0322EE2F170006D205 /* ProfileViewController.swift in Sources */,
 				EC185AFD22EE2E780006D205 /* DiscoverViewController.swift in Sources */,
 				EC5343BD22DD70D00085A939 /* ViewController.swift in Sources */,
+				ECD1A68622F006FD007A43DB /* Config.swift in Sources */,
+				ECD1A68422EFEE08007A43DB /* AuthService.swift in Sources */,
 				EC185B0122EE2EF20006D205 /* ActivityViewController.swift in Sources */,
 				ECBB362E22DEC2DB00D66769 /* HomePageViewController.swift in Sources */,
 				EC185AFF22EE2EAA0006D205 /* CameraViewController.swift in Sources */,

@@ -48,13 +48,11 @@ class SignInViewController: UIViewController {
         self.present(registerViewController, animated: true)
     }
     @IBAction func signInButtonTapped(_ sender: Any) {
-        print("sign in")
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
+        AuthService.signIn(email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
             self.performSegue(withIdentifier: "signInToTabbarVC", sender: nil)
+        }, onError: { errorString in
+            print(errorString!)
         })
+
     }
 }

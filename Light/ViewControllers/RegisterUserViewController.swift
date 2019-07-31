@@ -35,21 +35,11 @@ class RegisterUserViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func signupButtonTapped(_ sender: Any) {
-        print("sign up")
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { user, error in
-            if error != nil {
-                print(error!.localizedDescription)
-                return
-            }
-            
-            let ref = Database.database().reference()
-            let usersReference = ref.child("users")
-            let uid = user?.user.uid as String?
-            let newUserReference = usersReference.child(uid!)
-            newUserReference.setValue(["username": self.usernameTextField.text!, "email": self.emailTextField.text!])
+        AuthService.signUp(username: usernameTextField.text!, email: emailTextField.text!, password: passwordTextField.text!, onSuccess: {
             self.performSegue(withIdentifier: "registerUserToTabbarVC", sender: nil)
-            print("description: \(newUserReference.description())")
-        })
+        }) { (errorString: String?) in
+            print(errorString!)
+        }
     }
     /*
     // MARK: - Navigation
