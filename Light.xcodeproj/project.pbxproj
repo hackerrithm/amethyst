@@ -24,6 +24,7 @@
 		EC5343C522DD70D20085A939 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5343C322DD70D20085A939 /* LaunchScreen.storyboard */; };
 		EC5343D022DD70D20085A939 /* LightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343CF22DD70D20085A939 /* LightTests.swift */; };
 		EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5343EA22DD969F0085A939 /* SignInViewController.swift */; };
+		EC94BFAD22F1C6110029CEAA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC94BFAC22F1C6110029CEAA /* Post.swift */; };
 		ECBB362C22DEBC5500D66769 /* RegisterUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */; };
 		ECBB362E22DEC2DB00D66769 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */; };
 		ECD1A68422EFEE08007A43DB /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD1A68322EFEE08007A43DB /* AuthService.swift */; };
@@ -77,6 +78,7 @@
 		EC5343D122DD70D20085A939 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5343D622DD70D20085A939 /* LightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5343EA22DD969F0085A939 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		EC94BFAC22F1C6110029CEAA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		ECBB362B22DEBC5500D66769 /* RegisterUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUserViewController.swift; sourceTree = "<group>"; };
 		ECBB362D22DEC2DB00D66769 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		ECD1A68322EFEE08007A43DB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				EC5343BA22DD70D00085A939 /* AppDelegate.swift */,
+				EC94BFAB22F1C5EB0029CEAA /* Model */,
 				ECD1A68322EFEE08007A43DB /* AuthService.swift */,
 				ECD1A68522F006FD007A43DB /* Config.swift */,
 				EC185AF822EE09B60006D205 /* schema.json */,
@@ -197,6 +200,14 @@
 				EC5343D122DD70D20085A939 /* Info.plist */,
 			);
 			path = LightTests;
+			sourceTree = "<group>";
+		};
+		EC94BFAB22F1C5EB0029CEAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC94BFAC22F1C6110029CEAA /* Post.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +457,7 @@
 				EC5343EB22DD969F0085A939 /* SignInViewController.swift in Sources */,
 				EC185B0322EE2F170006D205 /* ProfileViewController.swift in Sources */,
 				EC185AFD22EE2E780006D205 /* DiscoverViewController.swift in Sources */,
+				EC94BFAD22F1C6110029CEAA /* Post.swift in Sources */,
 				EC5343BD22DD70D00085A939 /* ViewController.swift in Sources */,
 				ECD1A68622F006FD007A43DB /* Config.swift in Sources */,
 				ECD1A68422EFEE08007A43DB /* AuthService.swift in Sources */,

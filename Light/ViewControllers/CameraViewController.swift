@@ -12,6 +12,7 @@ import FirebaseDatabase
 
 class CameraViewController: UIViewController {
 
+    @IBOutlet weak var btnRemovePostBeforeShare: UIBarButtonItem!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var captionTextView: UITextView!
     @IBOutlet weak var btnShare: UIButton!
@@ -24,6 +25,30 @@ class CameraViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(CameraViewController.handleSelectedPhoto))
         photo.addGestureRecognizer(tapGesture)
         photo.isUserInteractionEnabled = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        handlePhotoPosts()
+    }
+    
+
+    func handlePhotoPosts() {
+        if selectedImage != nil {
+            self.btnShare.isEnabled = true
+            self.btnRemovePostBeforeShare.isEnabled = true
+            self.btnShare.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1)
+        } else {
+            self.btnShare.isEnabled = false
+            self.btnRemovePostBeforeShare.isEnabled = false
+            self.btnShare.backgroundColor = .lightGray
+        }
+    }
+    
+
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
     
 
@@ -42,6 +67,7 @@ class CameraViewController: UIViewController {
         present(pickerController, animated: true, completion: nil)
     }
     @IBAction func btnShare_TouchUpInside(_ sender: Any) {
+        view.endEditing(true)
         if let profileImg = self.selectedImage, let imageData = profileImg.jpegData(compressionQuality: 0.1) {
             let photoIdString = NSUUID().uuidString
             let storageRef = Storage.storage().reference(forURL: Config.STORAGE_ROOT_REF).child("post").child(photoIdString)
@@ -66,18 +92,31 @@ class CameraViewController: UIViewController {
         }
     }
     
+    @IBAction func removePost_TouchUpInside(_ sender: Any) {
+        self.cleanPostDataBeforeShare()
+        handlePhotoPosts()
+    }
+    
     func sendDataToDatabase(photoUrl: String) {
         let ref = Database.database().reference()
         let postsReference = ref.child("posts")
         let newPostId = postsReference.childByAutoId().key
         let newPostReference = postsReference.child(newPostId!)
-        newPostReference.setValue(["photoUrl": photoUrl], withCompletionBlock: {
+        newPostReference.setValue(["photoUrl": photoUrl, "caption": captionTextView.text!], withCompletionBlock: {
             (error, ref) in
             if error != nil {
                 print("error! ", error!.localizedDescription)
             }
             print("success")
+            self.cleanPostDataBeforeShare()
+            self.tabBarController?.selectedIndex = 0
         })
+    }
+    
+    func cleanPostDataBeforeShare() {
+        self.captionTextView.text = ""
+        self.photo.image = UIImage(named: "profile")
+        self.selectedImage = nil
     }
 }
 

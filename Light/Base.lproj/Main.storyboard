@@ -147,7 +147,6 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MGu-7h-caY">
                                         <rect key="frame" x="144" y="18" width="270" height="112"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -185,8 +184,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="c0u-JC-cWP"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Camera" id="z8K-89-yxK"/>
+                    <navigationItem key="navigationItem" title="Camera" id="z8K-89-yxK">
+                        <barButtonItem key="leftBarButtonItem" title="remove" id="PFv-kL-1ge">
+                            <connections>
+                                <action selector="removePost_TouchUpInside:" destination="Cl5-eU-i5s" id="seL-4O-HtZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="btnRemovePostBeforeShare" destination="PFv-kL-1ge" id="zAk-GY-lv3"/>
                         <outlet property="btnShare" destination="nUS-xv-hFK" id="oop-m0-mdl"/>
                         <outlet property="captionTextView" destination="MGu-7h-caY" id="FEo-yO-J2W"/>
                         <outlet property="photo" destination="XzY-Lv-LNL" id="1Vl-qj-ZpR"/>
@@ -251,7 +257,29 @@
                     <view key="view" contentMode="scaleToFill" id="hcK-ac-fpZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="u9y-8r-clx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" id="Ij2-iU-1Up">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ij2-iU-1Up" id="rXa-R9-XND">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u9y-8r-clx" firstAttribute="trailing" secondItem="9V2-Tc-jE6" secondAttribute="trailing" id="95m-ry-6vT"/>
+                            <constraint firstAttribute="bottom" secondItem="u9y-8r-clx" secondAttribute="bottom" id="GJz-Vm-vbv"/>
+                            <constraint firstItem="u9y-8r-clx" firstAttribute="leading" secondItem="9V2-Tc-jE6" secondAttribute="leading" id="p4x-fv-Fw3"/>
+                            <constraint firstItem="u9y-8r-clx" firstAttribute="top" secondItem="hcK-ac-fpZ" secondAttribute="top" identifier="PostCell" id="vdK-4e-qG0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9V2-Tc-jE6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="edd-lR-kF7">
@@ -261,10 +289,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="u9y-8r-clx" id="GEM-OZ-0ih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECS-eD-rxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="-585"/>
+            <point key="canvasLocation" x="3300.0000000000005" y="-585.26785714285711"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rIf-3F-MBA">
